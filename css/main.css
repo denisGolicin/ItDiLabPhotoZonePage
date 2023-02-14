@@ -378,3 +378,7 @@ footer>a{
     transform: translateX(0);
 }
 
+.mobile-text{
+    display: none;
+}
+

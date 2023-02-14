@@ -37,6 +37,9 @@
         left: 100%;
         transform: translate(-75%, 0);
     }
+    footer>a {
+        width: 50%;
+    }
 }
 
 @media (max-width: 524px){
@@ -59,5 +62,24 @@
     }
     main{
         padding: 35px;
+    }
+    .mobile-text{
+        display: block;
+        font-size: 20px;
+    }
+    .computer-text{
+        display: none;
+    }
+    .title-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 524px){
+    .title-text {
+        font-size: 23px;
+    }
+    .project-info>p {
+        font-size: 18px;
     }
 }
