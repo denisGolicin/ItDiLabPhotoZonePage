@@ -40,6 +40,9 @@
     footer>a {
         width: 50%;
     }
+    .portfolio-item{
+        min-width: 102%;
+    }
 }
 
 @media (max-width: 524px){
