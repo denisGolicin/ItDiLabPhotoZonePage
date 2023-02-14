@@ -54,4 +54,10 @@
     .header-text-interactive {
         width: 85%;
     }
+    .main-information>p{
+        text-align: center;
+    }
+    main{
+        padding: 35px;
+    }
 }
