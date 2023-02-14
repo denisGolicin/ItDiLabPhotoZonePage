@@ -4,5 +4,54 @@
     }
 }
 @media (max-width: 767px) {
-	
+    body, html{
+        min-width: 100%;
+    }
+	.header-element:not(:first-child, :nth-child(2)){
+        display: none;
+    }
+    .pr-modif{
+        justify-content: flex-start;
+    }
+    .main-model{
+        width: 500px;
+        height: 500px;
+    }
+    .images-model{
+        width: 180px;
+        height: 180px;
+    }
+    .model-left{
+        left: 0;
+        transform: translate(-35%, 0);
+    }
+    .model-right {
+        left: 100%;
+        transform: translate(-75%, 0);
+    }
+    .model-down {
+        left: 0;
+        transform: translate(-25%, 0);
+    }
+    .model-down-right {
+        left: 100%;
+        transform: translate(-75%, 0);
+    }
+}
+
+@media (max-width: 524px){
+    .main-model{
+        width: 350px;
+        height: 350px;
+    }
+    .images-model{
+        width: 120px;
+        height: 120px;
+    }
+    header>div {
+        width: 15%;
+    }
+    .header-text-interactive {
+        width: 85%;
+    }
 }

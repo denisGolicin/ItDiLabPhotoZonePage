@@ -202,15 +202,34 @@ main{
     }
 }
 .model-down{
-    top: 52%;
+    top: 70%;
     left: 8%;
     transform: translate(-12%, 0);
+    opacity: 0;
+    animation: anim-img2 1.2s forwards;
+    animation-delay: .7s;
+}
+@keyframes anim-img2 {
+    100%{
+        top: 52%;
+        opacity: 1;
+    }
 }
 .model-down-right{
-    top: 45%;
+    top: 78%;
     left: 93%;
     transform: translate(-90%, 0);
+    opacity: 0;
+    animation: anim-img3 .8s forwards;
+    animation-delay: .9s;
 }
+@keyframes anim-img3 {
+    100%{
+        top: 45%;
+        opacity: 1;
+    }
+}
+
 .title-text{
     font-size: 40px;
     text-shadow: 0 0 10px white;
