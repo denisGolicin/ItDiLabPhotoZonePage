@@ -100,7 +100,7 @@
 
 let portfolioElement = [];
 portfolioElement = document.querySelectorAll('.portfolio-item');
-const portfolioWp = document.querySelector('.portfolio-wrapper');
+const portfolioWp = document.querySelector('.portfolio-pd');
 const mainBlock = document.querySelector('.main-wrapper');
 const projectAnim = document.querySelector('.project-anim');
 
@@ -119,9 +119,9 @@ mainBlock.addEventListener('scroll', function() {
     
     //console.log(mainBlock.scrollTop)
 
-    if(posTopPortfolio < mainBlock.scrollTop - 400 && !scrollPortfolio){
+    if(posTopPortfolio < mainBlock.scrollTop - 200 && !scrollPortfolio){
         console.log('portfolioScroll');
-        portfolioWp.classList.add('opacityReset');
+        portfolioWp.classList.add('resetTop');
         scrollPortfolio = true;
     }
     if(posTopProjectAnim < mainBlock.scrollTop + 400 && !scrollProjectAnim){

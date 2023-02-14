@@ -16,6 +16,7 @@ html, body{
     font-size: 18px;
     color: #fff;
     overflow: hidden;
+    min-width: 1100px;
 }
 
 
@@ -43,13 +44,16 @@ header{
 
 }
 header>div{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>div>div{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 2%;
-    transform: translate(-2%, -50%);
     background-image: url(../src/img/null2.gif);
     background-repeat:no-repeat;
     background-position: center center;
@@ -71,9 +75,11 @@ header>div{
     transform: scale(0.7);
 }
 .header-text-interactive{
-    width: 30%;
+    width: 20%;
     font-size: 22px;
     text-shadow: 0 0 5px aquamarine;
+    justify-content: flex-start;
+    white-space: nowrap;
 }
 .header-text-main{
     width: 17.5%;
@@ -174,7 +180,7 @@ main{
     height: 300px;
 }
 .model-left{
-    left: 10%;
+    left:5%;
     top: 20%;
     opacity: 0;
     transform: translate(-10%, 0);
@@ -182,7 +188,7 @@ main{
     animation-delay: .5s;
 }
 .model-right{
-    left: 90%;
+    left: 93%;
     top: 20%;
     opacity: 0;
     transform: translate(-90%, 0);
@@ -197,12 +203,12 @@ main{
 }
 .model-down{
     top: 52%;
-    left: 12%;
+    left: 8%;
     transform: translate(-12%, 0);
 }
 .model-down-right{
     top: 45%;
-    left: 90%;
+    left: 93%;
     transform: translate(-90%, 0);
 }
 .title-text{
@@ -225,6 +231,8 @@ main{
 }
 .portfolio-pd{
     margin-top: 50px;
+    transform: translateX(1500px);
+    transition: .7s;
 }
 
 .portfolio-wrapper{
@@ -237,7 +245,6 @@ main{
     margin-top: 20px;
     overflow-x: auto;
     transition: .7s;
-    opacity: 0;
 }
 .pr-modif{
     justify-content: center;
@@ -350,8 +357,5 @@ footer>a{
 
 .resetTop{
     transform: translateX(0);
-}
-.opacityReset{
-    opacity: 1;
 }
 
