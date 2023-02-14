@@ -98,6 +98,48 @@
     
 // }
 
+let portfolioElement = [];
+portfolioElement = document.querySelectorAll('.portfolio-item');
+const portfolioWp = document.querySelector('.portfolio-wrapper');
+const mainBlock = document.querySelector('.main-wrapper');
+const projectAnim = document.querySelector('.project-anim');
+
+let scrollPortfolio = false;
+let scrollProjectAnim = false;
+
+if(portfolioElement.length > 5){
+    portfolioWp.classList.remove('pr-modif');
+} 
+
+mainBlock.addEventListener('scroll', function() {
+    const posTopPortfolio = portfolioWp.getBoundingClientRect().top;
+    const posTopProjectAnim = projectAnim.getBoundingClientRect().top;
+    //console.log(posTop)
+
+    
+    //console.log(mainBlock.scrollTop)
+
+    if(posTopPortfolio < mainBlock.scrollTop - 400 && !scrollPortfolio){
+        console.log('portfolioScroll');
+        portfolioWp.classList.add('opacityReset');
+        scrollPortfolio = true;
+    }
+    if(posTopProjectAnim < mainBlock.scrollTop + 400 && !scrollProjectAnim){
+        console.log('ProjectAnim');
+        projectAnim.classList.add('resetTop');
+        scrollProjectAnim = true;
+    }
+    
+    
+    // Блок достиг верхней границы экрана (или выше)
+    // elem.classList.toggle('visible', posTop <= 0);
+    
+    // Блок только появляется снизу (или выше)
+    // elem.classList.toggle('visible', posTop < window.innerHeight);
+    
+    // Блок целиком находится в видимой зоне
+    //elem.classList.toggle('visible', posTop + elem.clientHeight <= window.innerHeight && posTop >= 0);
+  });
 
 
 
