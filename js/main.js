@@ -164,6 +164,10 @@ mainBlock.addEventListener('scroll', function() {
     //elem.classList.toggle('visible', posTop + elem.clientHeight <= window.innerHeight && posTop >= 0);
   });
 
+document.addEventListener("DOMContentLoaded", function(){
+    console.log('loaded');
+});
+
 
 
 
