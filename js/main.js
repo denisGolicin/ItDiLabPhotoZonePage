@@ -114,8 +114,60 @@ samaraButton.addEventListener('click', function(){
 })
 samaraOpen.addEventListener('click', function(){
     samara.style.display = 'block';
+    videoSelfi.style.display = 'none';
+    avangard.style.display = 'none';
+    led.style.display = 'none';
     scrollStatus(false);
 })
+//================================================================
+const videoSelfiButton = document.querySelector("#videoSelfiButton");
+const videoSelfi = document.querySelector("#videoSelfi");
+const videoSelfiOpen = document.querySelector("#videoSelfiOpen");
+
+videoSelfiButton.addEventListener('click', function(){
+    videoSelfi.style.display = 'none';
+    scrollStatus(true);
+})
+videoSelfiOpen.addEventListener('click', function(){
+    samara.style.display = 'none';
+    videoSelfi.style.display = 'block';
+    avangard.style.display = 'none';
+    led.style.display = 'none';
+    scrollStatus(false);
+})
+//===================================================================
+const ledButton = document.querySelector("#ledButton");
+const led = document.querySelector("#led");
+const ledOpen = document.querySelector("#ledOpen");
+
+ledButton.addEventListener('click', function(){
+    led.style.display = 'none';
+    scrollStatus(true);
+})
+ledOpen.addEventListener('click', function(){
+    samara.style.display = 'none';
+    videoSelfi.style.display = 'none';
+    avangard.style.display = 'none';
+    led.style.display = 'block';
+    scrollStatus(false);
+})
+//===================================================================
+const avangardButton = document.querySelector("#avangardButton");
+const avangard = document.querySelector("#avangard");
+const avangardOpen = document.querySelector("#avangardOpen");
+
+avangardButton.addEventListener('click', function(){
+    avangard.style.display = 'none';
+    scrollStatus(true);
+})
+avangardOpen.addEventListener('click', function(){
+    samara.style.display = 'none';
+    videoSelfi.style.display = 'none';
+    avangard.style.display = 'block';
+    led.style.display = 'none';
+    scrollStatus(false);
+})
+//===================================================================
 
 function scrollStatus(status){
     if(status){
