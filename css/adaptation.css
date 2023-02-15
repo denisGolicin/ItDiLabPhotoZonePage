@@ -43,6 +43,10 @@
     .portfolio-item{
         min-width: 102%;
     }
+    .wrapper-popup{
+        width: 90%;
+        height: 80%;
+    }
 }
 
 @media (max-width: 524px){
@@ -75,6 +79,12 @@
     }
     .title-text {
         font-size: 30px;
+    }
+    .description-popup {
+        font-size: 15px;
+    }
+    .img-popup>img {
+        width: 100%;
     }
 }
 

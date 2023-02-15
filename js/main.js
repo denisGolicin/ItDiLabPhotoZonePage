@@ -104,6 +104,28 @@ const portfolioWp = document.querySelector('.portfolio-pd');
 const mainBlock = document.querySelector('.main-wrapper');
 const projectAnim = document.querySelector('.project-anim');
 
+const samaraButton = document.querySelector("#samaraButton");
+const samara = document.querySelector("#samara");
+const samaraOpen = document.querySelector("#samaraOpen");
+
+samaraButton.addEventListener('click', function(){
+    samara.style.display = 'none';
+    scrollStatus(true);
+})
+samaraOpen.addEventListener('click', function(){
+    samara.style.display = 'block';
+    scrollStatus(false);
+})
+
+function scrollStatus(status){
+    if(status){
+        mainBlock.style.overflowY = 'auto';
+    } else {
+        mainBlock.style.overflowY = 'hidden';
+    }
+}
+
+
 let scrollPortfolio = false;
 let scrollProjectAnim = false;
 
@@ -116,6 +138,7 @@ mainBlock.addEventListener('scroll', function() {
     const posTopProjectAnim = projectAnim.getBoundingClientRect().top;
     //console.log(posTop)
 
+    
     
     //console.log(mainBlock.scrollTop)
 
