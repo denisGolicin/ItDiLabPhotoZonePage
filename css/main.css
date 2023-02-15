@@ -367,12 +367,13 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    display: none;
 }
-footer>a{
-    width: 20%;
+footer>p{
+    width: 25%;
     text-align: center;
     color: white;
+    font-size: 15px;
 }
 
 .resetTop{
@@ -390,7 +391,7 @@ footer>a{
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, calc(-50% - 35px));
 
     background-color: #0c192f;
     border-radius: 10px;
@@ -454,5 +455,10 @@ footer>a{
     left: 99%;
     transform: translate(-120%, 60%);
     text-shadow: 0 0 10px red;
+    cursor: pointer;
+    transition: .3s;
+}
+.title-popup:hover::before{
+    color: brown;
 }
 

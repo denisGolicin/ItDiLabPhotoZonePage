@@ -47,6 +47,9 @@
         width: 90%;
         height: 80%;
     }
+    footer{
+        display: flex;
+    }
 }
 
 @media (max-width: 524px){
